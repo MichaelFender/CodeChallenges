@@ -3,8 +3,8 @@
 function uniqueCharacters(str)
 {
     for(let i = 0; i < str.length; i++)
-        for(let j = i + 1; j < str.length; j++)
-            if (str[i] == str[j])
+        for(let x = i + 1; x < str.length; x++)
+            if (str[i] == str[x])
                 return false
                 return true
             }
