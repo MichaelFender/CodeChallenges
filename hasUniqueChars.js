@@ -9,7 +9,7 @@ function uniqueCharacters(str)
                 return true
             }
 
-            let input = "Bobo"
+            let input = "Boob"
  
 if (uniqueCharacters(input) == true)
     console.log("The String " + input + " has all unique characters")
