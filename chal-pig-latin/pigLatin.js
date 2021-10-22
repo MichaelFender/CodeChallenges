@@ -1,16 +1,24 @@
-function translatePigLatin(str) {
-    let vowels = ['a', 'e', 'i', 'o', 'u'];
-    let newStr = "";
-
-    if (vowels.indexOf(str[0]) > -1) {
-        newStr = str + "way";
-        return newStr;
-    } else {
-        let firstMatch = str.match(/[aeiou]/g) || 0;
-        let vowel = str.indexOf(firstMatch[0]);
-        newStr = str.substring(vowel) + str.substring(0, vowel) + "ay";
-        console.log(newStr);
+function pigLatin(string){
+    let stringIntoList = string.split(" ")
+    let consonants = 'bcdfghjklmnpqrstvwxyz'
+    //console.log(stringIntoList);
+    for(let i = 0; i < stringIntoList.length; i++){
+        //console.log(stringIntoList[i]);
+        //console.log(stringIntoList[i][0]);
+        if(consonants.includes(stringIntoList[i][0])){
+            stringIntoList[i] = stringIntoList[i].slice(1) + stringIntoList[i][0] + 'ay'
+            //console.log(fixedWord);
+        } else {
+            stringIntoList[i] = stringIntoList[i] + 'yay'
+            //console.log(fixedVowelWord);
+        }
+        
     }
-
+    //console.log(stringIntoList);
+    let result = stringIntoList.join(' ')
+    //console.log(result);
+    return result
 }
-translatePigLatin('Hello')
+
+let newString = pigLatin("break this string into pieces")
+console.log(newString);
