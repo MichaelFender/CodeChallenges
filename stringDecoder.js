@@ -3,8 +3,12 @@ const decoder = code => {
     let result = ""
 
     for (let i=0; i<stringSplit.length; i++) {
-        if (!isNaN(+stringSplit[i])){
-            i += +stringSplit[i]
+        if (!isNaN(+stringSplit[i])){ i += +stringSplit[i] 
+        } else{
+
         }
     }
+    return result
 }
+
+
