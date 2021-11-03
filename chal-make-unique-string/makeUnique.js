@@ -1,7 +1,7 @@
 // Write your solution below:
 console.log('hello world');
 
-function removeDuplicateCharacters(string) {
+function makeUnique(string) {
     return string
       .split('')
       .filter(function(item, pos, self) {
@@ -9,4 +9,6 @@ function removeDuplicateCharacters(string) {
       })
       .join('');
   }
-  console.log(removeDuplicateCharacters('baraban'));
+  console.log(makeUnique('baraban'));
+  console.log(makeUnique('helloworld'));
+  console.log(makeUnique('iwanttoclimbamountain'));
