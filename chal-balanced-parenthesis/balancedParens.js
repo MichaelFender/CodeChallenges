@@ -1,7 +1,17 @@
-// Sample Strings
-let sample1 = "This ( is unbalanced."
-let sample2 = "(This (is (a) balanced) string.)"
-let sample3 = "This is () also ) unbalanced."
-let sample4 = "Balanced."
+let balancedParens = (str) => {
+    
+    return !str.split('').reduce((previousChar, thisChar) => {
+        if(thisChar === '(' || thisChar === '{' || thisChar === '[' ) {
+            return ++previousChar;
+        } else if (thisChar === ')' || thisChar === '}' || thisChar === ']') {
+            return --previousChar;
+        }
 
-// Write your solution below:
+        return previousChar
+    }, 0);
+}
+
+console.log(balancedParens("This ( is unbalanced."));
+console.log(balancedParens("(This (is (a) balanced) string.)"));
+console.log(balancedParens("This is () also ) unbalanced."));  
+console.log(balancedParens("Balanced."));
