@@ -11,7 +11,7 @@ let balancedParens = (str) => {
     }, 0);
 }
 
-console.log(balancedParens("This ( is unbalanced."));
-console.log(balancedParens("(This (is (a) balanced) string.)"));
-console.log(balancedParens("This is () also ) unbalanced."));  
-console.log(balancedParens("Balanced."));
+console.log(balancedParens("This [( is unbalanced."));
+console.log(balancedParens("({This (is {[(a)]} balanced) }string.)"));
+console.log(balancedParens("This is{}} () also )]] unbalanced."));  
+console.log(balancedParens("[{(Balanced.)}]"));
