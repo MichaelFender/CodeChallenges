@@ -12,5 +12,5 @@ function findOutlier(arr) {
     };
   }
 
-console.log(findOutlier([1, 3, 33, 139, 17, 10, 649, 31]))
+console.log(findOutlier([1, 3, 33, 139, 17, 11, 649, 31, 0, 33]))
 console.log(findOutlier([6, 8, 22, 200, 60, 13, 2208, 4076]))
