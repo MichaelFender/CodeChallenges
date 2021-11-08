@@ -17,3 +17,4 @@ function shirtSort(str) {
     return small + medium + large
 }
 console.log(shirtSort('lms'))
+console.log(shirtSort('llllssmsmsmlmslmlmslmslmslmslmlsmlsmlsmlsmlsmlsmlsm'))
