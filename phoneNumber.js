@@ -9,4 +9,4 @@ function createPhoneNumber(phone){
     return number;
   }
 
-console.log(createPhoneNumber('1234567890'));
+console.log(createPhoneNumber('3374964104'));
